@@ -52,7 +52,7 @@ export default function Login() {
         <button
           onClick={() =>
             (window.location.href =
-              "http://localhost:9090/oauth2/authorization/google")
+              "https://auction-backend-sx91.onrender.com/oauth2/authorization/google")
           }
           className="cursor-pointer w-full bg-red-600 hover:bg-red-700 text-white py-2.5 rounded-lg font-semibold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-red-300"
         >
