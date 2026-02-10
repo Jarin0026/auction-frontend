@@ -2,7 +2,8 @@ import { useEffect, useMemo, useState } from "react";
 import api from "../services/api";
 
 import noimage from "../assets/no image.avif";
-import WalletTopup from "./WalletTopUp";
+import WalletTopup from "./WalletTopup";
+
 import AdminDashboard from "./AdminDashboard";
 
 export default function Dashboard() {
