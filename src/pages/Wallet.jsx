@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../services/api";
-import WalletTopup from "./WalletTopUp";
+import WalletTopup from "./WalletTopup";
+
 
 export default function Wallet() {
   const navigate = useNavigate();
