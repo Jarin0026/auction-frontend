@@ -43,7 +43,7 @@ export default function AuctionDetails() {
     const start = new Date(auction.startTime);
     const end = new Date(auction.endTime);
 
-    // ❌ Invalid config
+    
     if (end <= start) {
       toast.error("Invalid auction configuration", {
         position: "top-center",
@@ -51,7 +51,7 @@ export default function AuctionDetails() {
       return;
     }
 
-    // ⏳ Not started yet
+
     if (now < start) {
       toast.error("Auction has not started yet", {
         position: "top-center",
@@ -59,7 +59,7 @@ export default function AuctionDetails() {
       return;
     }
 
-    // 🛑 Already ended
+    
     if (now >= end || isEnded) {
       toast.error("Auction already ended", {
         position: "top-center",
@@ -109,7 +109,7 @@ export default function AuctionDetails() {
 
   useEffect(() => {
     const client = new Client({
-      webSocketFactory: () => new SockJS("http://localhost:9090/ws"),
+      webSocketFactory: () => new SockJS(`${import.meta.env.VITE_API_BASE_URL}/ws`),
       reconnectDelay: 5000,
       onConnect: () => {
         client.subscribe(`/topic/bids/${id}`, (msg) => {
@@ -149,7 +149,7 @@ export default function AuctionDetails() {
               auction.imageUrls.map((img, i) => (
                 <img
                   key={i}
-                  src={`http://localhost:9090${img}`}
+                  src={`${import.meta.env.VITE_API_BASE_URL}${img}`}
                   className="w-full h-auto object-contain rounded-xl border border-gray-200 dark:border-gray-700 hover:scale-105 transition"
                   alt="Auction"
                 />
