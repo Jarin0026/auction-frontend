@@ -118,7 +118,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Content */}
+      
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
         <h2 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">
           Available Auctions
@@ -152,7 +152,7 @@ export default function Dashboard() {
                   <img
                     src={
                       auction.imageUrls?.length > 0
-                        ? `http://localhost:9090${auction.imageUrls[0]}`
+                        ?`${import.meta.env.VITE_API_BASE_URL}${auction.imageUrls[0]}`
                         : noimage
                     }
                     className="w-full h-44 sm:h-52 object-cover group-hover:scale-[1.02] transition"
