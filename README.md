@@ -1,5 +1,5 @@
 ## Frontend – React Application
-#### Frontend (React) → REST API → Spring Boot → MySQL Database <br>
+**Frontend (React) → REST API → Spring Boot → MySQL Database** <br>
 
 The frontend of this Auction Platform is built using React.js. It provides a clean, responsive, and user-friendly interface for users to interact with the system.
 
