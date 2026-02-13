@@ -4,7 +4,7 @@
 The frontend of this Auction Platform is built using React.js. It provides a clean, responsive, and user-friendly interface for users to interact with the system.
 
 ### What the frontend does:
-🔐 User Registration & Login (JWT + OAuth support) <br>
+🔐 User Registration & Login (JWT Authentication + Google OAuth Login) <br>
 🛍 View all auction products <br>
 📄 View detailed product information <br>
 💰 Place bids on active auctions <br>
