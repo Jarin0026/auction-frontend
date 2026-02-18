@@ -29,8 +29,6 @@ The frontend of this Auction Platform is built using React.js. It provides a cle
 * Tailwind CSS <br>
 * Razorpay Integration <br>
 * React Router <br>
-* Tailwind CSS
-* Razorpay Integration
 
 [Backend Repository](https://github.com/Jarin0026/auction-backend)
 
